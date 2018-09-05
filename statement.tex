@@ -1,0 +1,64 @@
+\documentclass[11pt]{article}
+\usepackage{mathtools,hyperref,booktabs,fullpage, txfonts}
+\usepackage[amssymb,cdot]{SIunits}
+\usepackage[utopia]{mathdesign}     
+
+\usepackage[table]{xcolor}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{fullpage}
+ 
+\definecolor{lightgray}{gray}{0.93}
+
+\pagestyle{empty}
+\setlength\parindent{0pt}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+ 
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{\z@}%
+                                  {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                  {2.3ex \@plus.2ex}%
+                                  {\normalfont\bfseries}}
+\makeatother
+
+
+\begin{document}
+
+{\large
+  \begin{center}
+    {\bf ME 701 -- Development of Computer Applications In Mechanical Engineering \\ 
+         Homework 2 }         
+  \end{center}
+}
+ 
+All submissions must be through GitHub.
+Somebody, please remove me!
+
+\section*{Problem 1}
+
+Write a bash script that converts a temperature from degrees Fahrenheit to degrees Celcius. 
+One way is to use {\tt bc}; see TLCL for more.  
+The script should be called {\tt temperature.sh}.
+
+\section*{Problem 2}
+ 
+Write a bash script that provides a count of the number of files and subdirectories in the current directory. 
+Hint: use {\tt grep}.
+The script should be named {\tt count\_files\_and\_subdirs.sh}.
+\section*{Problem 3}
+
+For this problem, you need to find a partner (or team of partners) in the class.  
+You are then to do the following:
+\begin{enumerate}
+ \item Add your partner's repository as a remote
+ \item Fetch and checkout your partners {\tt master} branch as a new branch named {\tt dev} in your own, local repository
+ \item Modify your partner's {\tt  temperature.sh} script to output the temperature in Kelvin, too.
+ \item Commit any changes and {\tt push} to {\it your} GitHub repository as a new remote branch named {\tt dev}
+ \item Make a {\it pull request} from your remote {\tt dev} branch into your partner's {\tt master} branch
+ \item Communicate as needed so that the pull request is reviewed and accepted.
+\end{enumerate}
+For full credit, each of the steps described above must be clearly visible from the commit log!
+
+
+\end{document}
